@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting - Conduct & Participate in Elections</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 11l3 3L22 4"></path>
+                    <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                </svg>
+                <h1>Online Voting</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <button class="nav-btn" id="navLoginBtn">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section id="heroSection" class="section hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">Online Voting Platform</h1>
+                    <p class="hero-subtitle">Conduct Elections or Participate as a Voter - Secure & Transparent</p>
+                    <div class="hero-badges">
+                        <div class="badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            <span>100% Secure</span>
+                        </div>
+                        <div class="badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Govt. Certified</span>
+                        </div>
+                        <div class="badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0110 0v4"></path>
+                            </svg>
+                            <span>Encrypted</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="hero-btn" id="conductorLoginBtn">Conduct Election</button>
+                        <button class="hero-btn hero-btn-secondary" id="voterLoginBtn">Vote Now</button>
+                    </div>
+                </div>
+                
+                <!-- Statistics -->
+                <div class="stats-section">
+                    <div class="stat-box">
+                        <h3 id="ongoingElections">36</h3>
+                        <p>Ongoing Elections</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 id="completedElections">20,605</h3>
+                        <p>Completed Elections</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 id="activeVoters">5,00,000+</h3>
+                        <p>Active Voters</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 id="satisfactionRate">99.8%</h3>
+                        <p>Satisfaction Rate</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="featuresSection" class="section features-section">
+                <h2 class="section-title">Why Choose online voting?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>100% Secure</h3>
+                        <p>Multiple layers of security with encryption, OTP authentication, and audit trails</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3>Easy to Use</h3>
+                        <p>User-friendly interface accessible from any device, anywhere, anytime</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3>Cost Effective</h3>
+                        <p>Conduct elections at a fraction of traditional costs with no physical infrastructure</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Real-time Results</h3>
+                        <p>Instant vote counting and live result updates with complete transparency</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Audit Trail</h3>
+                        <p>Complete transparency with detailed audit logs and voter receipts</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 010 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Trusted by Thousands</h3>
+                        <p>Used by leading corporates, associations, societies, and institutions</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Login Type Selection -->
+            <section id="loginTypeSection" class="section hidden">
+                <div class="login-type-container">
+                    <h2 class="section-title">Choose Login Type</h2>
+                    <div class="login-type-grid">
+                        <div class="login-type-card" id="conductorCard">
+                            <div class="login-type-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3>Election Conductor</h3>
+                            <p>Create and manage elections, add candidates, set rules</p>
+                            <button class="btn btn-primary" id="showConductorLogin">Login as Conductor</button>
+                        </div>
+                        <div class="login-type-card" id="voterCard">
+                            <div class="login-type-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <h3>Voter</h3>
+                            <p>Enroll, participate in elections, and cast your vote</p>
+                            <button class="btn btn-primary" id="showVoterLogin">Login as Voter</button>
+                            <button class="btn btn-secondary" id="showEnrollment">New? Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Voter Enrollment Section -->
+            <section id="enrollmentSection" class="section hidden">
+                <div class="card enrollment-card">
+                    <h2>Voter Enrollment</h2>
+                    <p class="subtitle">Register to participate in elections</p>
+                    <form id="enrollmentForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="enrollName">Full Name *</label>
+                                <input type="text" id="enrollName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="enrollEmail">Email *</label>
+                                <input type="email" id="enrollEmail" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="enrollPhone">Phone Number *</label>
+                                <input type="tel" id="enrollPhone" placeholder="Enter phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="enrollDOB">Date of Birth *</label>
+                                <input type="date" id="enrollDOB" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="enrollAddress">Address *</label>
+                            <textarea id="enrollAddress" placeholder="Enter your address" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="enrollPhoto">Upload Photo *</label>
+                            <input type="file" id="enrollPhoto" accept="image/*" required>
+                            <div id="photoPreview" class="photo-preview"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="enrollPassword">Create Password *</label>
+                            <input type="password" id="enrollPassword" placeholder="Create a password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Complete Enrollment</button>
+                        <button type="button" class="btn btn-secondary" id="backToLoginType">Back</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Conductor Login Section -->
+            <section id="conductorLoginSection" class="section hidden">
+                <div class="card login-card">
+                    <div class="login-header">
+                        <svg class="login-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"></path>
+                        </svg>
+                        <h2>Election Conductor Login</h2>
+                        <p class="subtitle">Manage and conduct elections</p>
+                    </div>
+                    <form id="conductorLoginForm">
+                        <div class="form-group">
+                            <label for="conductorEmail">Email</label>
+                            <input type="email" id="conductorEmail" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="conductorPassword">Password</label>
+                            <input type="password" id="conductorPassword" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-secondary" id="backFromConductor">Back</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Voter Login Section -->
+            <section id="voterLoginSection" class="section hidden">
+                <div class="card login-card">
+                    <div class="login-header">
+                        <svg class="login-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <h2>Voter Login</h2>
+                        <p class="subtitle">Access available elections</p>
+                    </div>
+                    <form id="voterLoginForm">
+                        <div class="form-group">
+                            <label for="voterIdLogin">Voter ID</label>
+                            <input type="text" id="voterIdLogin" placeholder="Enter your voter ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="voterPassword">Password</label>
+                            <input type="password" id="voterPassword" placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-secondary" id="backFromVoter">Back</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Conductor Dashboard -->
+            <section id="conductorDashboard" class="section hidden">
+                <div class="dashboard-header">
+                    <h2>Election Conductor Dashboard</h2>
+                    <button class="btn btn-secondary" id="conductorLogout">Logout</button>
+                </div>
+                <div class="dashboard-actions">
+                    <button class="btn btn-primary" id="createElectionBtn">Create New Election</button>
+                    <button class="btn btn-secondary" id="viewMyElectionsBtn">My Elections</button>
+                </div>
+                <div id="conductorContent">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </section>
+
+            <!-- Create Election Form -->
+            <section id="createElectionSection" class="section hidden">
+                <div class="card election-form-card">
+                    <h2>Create New Election</h2>
+                    <form id="createElectionForm">
+                        <div class="form-group">
+                            <label for="electionTitle">Election Title *</label>
+                            <input type="text" id="electionTitle" placeholder="e.g., Student Council Election 2024" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="electionDescription">Description *</label>
+                            <textarea id="electionDescription" placeholder="Describe the election" rows="3" required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="electionStartDate">Start Date & Time *</label>
+                                <input type="datetime-local" id="electionStartDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="electionEndDate">End Date & Time *</label>
+                                <input type="datetime-local" id="electionEndDate" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="electionType">Election Type *</label>
+                            <select id="electionType" required>
+                                <option value="">Select type</option>
+                                <option value="general">General Election</option>
+                                <option value="student">Student Election</option>
+                                <option value="corporate">Corporate Election</option>
+                                <option value="society">Society Election</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Election Rules</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" id="allowMultipleVotes"> Allow vote changes</label>
+                                <label><input type="checkbox" id="requirePhoto"> Require voter photo verification</label>
+                                <label><input type="checkbox" id="secretBallot" checked> Secret ballot</label>
+                                <label><input type="checkbox" id="showLiveResults"> Show live results</label>
+                            </div>
+                        </div>
+                        <h3>Add Candidates/Parties</h3>
+                        <div id="candidatesContainer">
+                            <div class="candidate-input-group">
+                                <input type="text" class="candidate-name" placeholder="Candidate/Party Name" required>
+                                <input type="text" class="candidate-party" placeholder="Party/Affiliation">
+                                <textarea class="candidate-description" placeholder="Description" rows="2"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="addCandidateBtn">+ Add Another Candidate</button>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-success">Create Election</button>
+                            <button type="button" class="btn btn-secondary" id="cancelElectionBtn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Voter Dashboard - Available Elections -->
+            <section id="voterDashboard" class="section hidden">
+                <div class="dashboard-header">
+                    <div>
+                        <h2>Available Elections</h2>
+                        <p class="subtitle">Select an election to participate</p>
+                    </div>
+                    <button class="btn btn-secondary" id="voterLogout">Logout</button>
+                </div>
+                <div class="voter-info-card">
+                    <img id="voterPhoto" class="voter-photo" src="" alt="Voter Photo">
+                    <div class="voter-details">
+                        <h3 id="voterNameDisplay"></h3>
+                        <p>Voter ID: <strong id="voterIdDisplay"></strong></p>
+                    </div>
+                </div>
+                <div id="electionsListContainer" class="elections-grid">
+                    <!-- Elections will be dynamically loaded -->
+                </div>
+            </section>
+
+            <!-- Voting Section -->
+            <section id="votingSection" class="section hidden">
+                <div class="voting-header">
+                    <h2>Cast Your Vote</h2>
+                    <p class="subtitle">Select your preferred candidate below</p>
+                    <div class="timer" id="timer">
+                        <svg class="timer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span id="timeRemaining">Time remaining: 30:00</span>
+                    </div>
+                </div>
+
+                <div class="candidates-grid" id="candidatesGrid">
+                    <!-- Candidates will be dynamically loaded -->
+                </div>
+
+                <div class="voting-actions">
+                    <button id="submitVoteBtn" class="btn btn-success" disabled>Submit Vote</button>
+                    <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="section hidden">
+                <div class="card results-card">
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h2>Vote Submitted Successfully!</h2>
+                    <p class="subtitle">Thank you for participating in the election</p>
+                    <div class="vote-details" id="voteDetails">
+                        <!-- Vote details will be shown here -->
+                    </div>
+                    <button id="viewResultsBtn" class="btn btn-primary">View Live Results</button>
+                </div>
+            </section>
+
+            <!-- Live Results Section -->
+            <section id="liveResultsSection" class="section hidden">
+                <div class="results-header">
+                    <h2>Live Election Results</h2>
+                    <p class="subtitle">Real-time voting statistics</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 010 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="totalVotes">0</h3>
+                            <p>Total Votes</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="turnoutRate">0%</h3>
+                            <p>Turnout Rate</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="candidateCount">0</h3>
+                            <p>Candidates</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-grid" id="resultsGrid">
+                    <!-- Results will be dynamically loaded -->
+                </div>
+
+                <button id="backToHomeBtn" class="btn btn-secondary">Back to Home</button>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Online Voting</h3>
+                    <p>Secure Platform for Conducting and Participating in Elections</p>
+                    <div class="footer-badges">
+                      
+                        
+                       
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#evoting">eVoting</a></li>
+                        <li><a href="#eauction">eAuction</a></li>
+                        <li><a href="#eagm">eAGM</a></li>
+                        <li><a href="#edataroom">eDataRoom</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>📧 info@onlinevoting.in</p>
+                    <p>📞 +91 1234567890</p>
+                    <p>📍 banglore, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Online Voting. All rights reserved. | Secure & Transparent Voting</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for Confirmation -->
+    <div id="confirmModal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Confirm Your Vote</h3>
+            <p>Are you sure you want to vote for:</p>
+            <div id="confirmCandidate" class="confirm-details"></div>
+            <div class="modal-actions">
+                <button id="confirmYes" class="btn btn-success">Yes, Submit</button>
+                <button id="confirmNo" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
